@@ -1,0 +1,242 @@
+/************** Overall styles **************/
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 90%;
+  line-height: 160%;
+  height: 100%;
+  color: #888;
+}
+
+main {
+  min-height: 100%;
+  padding: 100px 20px;
+  background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMyIgaGVpZ2h0PSIzIiB2aWV3Qm94PSIwIDAgMyAzIgogIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgc3R5bGU9ImZpbGw6cmdiYSgwLDAsMTAwLDAuMikiLz4KPC9zdmc+Cg=="), linear-gradient(135deg,  #faffb7 0%,#a3ffa7 50%,#a0c7e5 100%);
+}
+
+a {
+  color: #5d7cb3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button, input[type=submit] {
+  background: #8caadb;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: .4em .8em .5em .8em;
+}
+
+button, input[type=submit] {
+  background: #8caadb;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: .4em .8em .5em .8em;
+  cursor: pointer;
+  transition: background .5s;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button:hover, input[type=submit]:hover {
+  background: #6c82a8;
+}
+
+input {
+  border-radius: 2px;
+  border: none;
+  padding: .4em .8em .5em .8em;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/************** Status **************/
+
+#status {
+  float: left;
+  margin: 1.5em 0 0 2em;
+  color: white;
+}
+
+.error {
+  color: #f00;
+}
+
+/************** Header **************/
+
+body > header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(85,95,112,0.9);
+  border-bottom: 1px solid #aaa;
+  overflow: auto;
+}
+
+body > header > h1 {
+  float: left;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url(logo.svg) no-repeat;
+  background-size: auto 1.8em;
+  width: 6.85694117647058em;
+  height: 1.8em;
+  margin: .2em 0 0 .2em;
+}
+
+/************** Navigation **************/
+
+body > header > aside {
+  float: right;
+  margin: 0;
+}
+
+body > header > aside > nav {
+  float: left;
+}
+
+body > header > aside > nav > ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: auto;
+  font-size: 100%;
+}
+
+body > header > aside > nav > ul > li {
+  float: left;
+  border-left: 1px solid #555f70;
+  background: #414957;
+  transition: background .5s;
+}
+
+body > header > aside > nav > ul > li:hover {
+  background: #303742;
+}
+
+body > header > aside > nav > ul > li > a {
+  color: #fff;
+  display: block;
+  padding: 1.3em 1.7em;
+}
+
+body > header > aside > nav > ul > li > a:hover {
+  text-decoration: none;
+}
+
+/************** Footer **************/
+
+body > footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(85,95,112,0.9);
+  border-top: 1px solid #aaa;
+}
+
+body > footer > form {
+  margin: 4px 8px;
+  float: left;
+}
+
+/************** Font list **************/
+
+#fonts {
+}
+
+ul.fontlist {
+  display: block;
+  text-align: center;
+  margin: 0 0 0 20px;
+  padding: 0;
+  list-style-type: none;
+  overflow: auto;
+}
+
+ul.fontlist li {
+  text-align: left;
+  display: inline-block;
+  width: 400px;
+  height: 100px;
+  vertical-align: top;
+  border: 1px solid #ddd;
+  border-spacing: 0.7em;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.08);
+  margin: 0 20px 20px 0;
+  padding: .4em .8em;
+  overflow: hidden;
+}
+
+ul.fontlist li > header {
+  color: #888;
+  margin-bottom: .5em;
+}
+
+ul.fontlist .installed {
+  color: #000;
+  font-size: 50px;
+  overflow: hidden;
+  padding-top: 25px;
+  white-space: nowrap;
+  vertical-align: text-top;
+}
+
+/************** Directory browser **************/
+
+#browser {
+}
+
+#browser ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  display: table;
+  border-collapse: separate;
+  border: 1px solid #ddd;
+  border-spacing: 0.7em;
+  background: white;
+  border-radius: 4px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,.08);
+}
+
+#browser li {
+  display: table-row;
+  background: white;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+#browser li a {
+  display: block;
+}
+
+/************** Smaller Screens **************/
+
+@media (min-width: 760px) and (max-width: 970px) {
+    body > header { height: 40pt; }
+    body > header nav > ul:first-child > li:first-child { margin-left: 0; }
+}
+
+@media (max-width: 759px) {
+    body > header { height: auto; }
+    body > header h1 { float: none;}
+    body > header h2 { display: none; }
+    .pages, .pages li { display: inline; clear: both;}
+    .pages li { margin: 0 2em 0 0; }
+    .posts { display:none; }
+    main { width: auto; margin: 120px 1em 0 1em; }
+    .comments > ul > li:after, .comments > footer form fieldset input, .comments > footer form fieldset textarea { width: 90%; }
+}
