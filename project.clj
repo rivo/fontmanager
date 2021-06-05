@@ -4,7 +4,7 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
                  [org.clojure/data.json "0.2.4"]
                  [compojure "1.1.6"]]
-  :plugins [[lein-ring "0.8.10"]]
+  :plugins [[lein-ring "0.12.5"]]
   :ring {:handler fontmanager.handler/app}
   :profiles
   {:dev {:dependencies [[javax.servlet/servlet-api "2.5"]
